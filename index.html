@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>The Whistlers</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logosite.png" alt="Logo du site"></a>
+            <a href="histoire.html">Histoire</a>
+            <a href="corruption.html">Corruption</a>
+            <a href="integrite.html">Intégrité</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+    <main>
+        <!-- CARROUSEL -->
+
+        <section class="main_slider">
+
+            <!--image slider start-->
+
+            <div class="slider">
+
+                <div class="slides">
+
+                    <!--radio buttons start-->
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+
+                    <!--radio buttons end-->
+
+                    <!--slide images start-->
+
+                    <div class="slide first">
+                        <img src="img/carrousel/editionqatar.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/carrousel/arbitre.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/file7iw91p5hcy8udq4ngvz.jpg" alt="">
+                    </div>
+
+                    <!--slide images end-->
+
+                    <!--automatic navigation start-->
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <!--automatic navigation end-->
+
+                </div>
+
+                <!--manual navigation start-->
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
+                <!--manual navigation end-->
+
+            </div>
+            <!--image slider end-->
+        </section>
+
+        <section class="qui">
+
+            <h1>QUI SOMMES-NOUS?</h1>
+            <h2 class="titre_objectif">NOS OBJECTIFS:</h2>
+            <article class="ligne1">
+                <div class="enquete">
+                    <p>Enquêter: Etre les lanceurs d'alerte des coulisses des évènements mondiaux.</p>
+                </div>
+                <div class="justice">
+                    <p>Justice: Mettre en place un arsenal juridique contre la corruption (arbitrage, fédérations,
+                        trafic
+                        d’influence et paris sportifs).</p>
+                </div>
+            </article>
+            <article class="ligne2">
+                <div class="informer">
+                    <p>Informer: Travailler avec des journalistes afin de divulger dans les médias les faits de
+                        corruption.
+                    </p>
+                </div>
+
+                <div class="liberte">
+                    <p>Liberté: Protection des journalistes et de la presse</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="affaire">
+            <h1>NOS AFFAIRES</h1>
+            <article>
+                <div class="affaire1">
+                    <h2 class="titre_affaire">Coupe du Monde 98: Maroc-France</h2>
+                    <img src="img/cdm98.jpg">
+
+                </div>
+                <div class="affaire2">
+                    <h2 class="titre_affaire">Le scandale du continent africain - Coupe du monde 2022</h2>
+                    <img src="img/continentafricain.jpeg">
+
+                </div>
+                <div class="affaire3">
+                    <h2 class="titre_affaire">Harcèlement et abus sexuels - Foot féminin</h2>
+                    <img src="img/footfeminin.jpg">
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <hr />
+        <img src="img/logosite.png" class="logo-footer">
+        <div class="partenaire">
+            <h1>Nos partenaires :</h1>
+            <a href="https://sos-esclaves.com/">
+                SOS Esclaves</a>
+            <br />
+            <a href="https://www.actioncontrelafaim.org/">Action contre la faim</a>
+            <br />
+            <a href="https://www.solidarites.org/fr/">Solidarités international</a>
+        </div>
+        <div class="reseaux">
+            <i class="fa-brands fa-facebook-square" onclick="nonfonctionnel()"></i>
+            <i class="fa-brands fa-instagram-square" onclick="nonfonctionnel()"></i>
+            <i class="fa-brands fa-twitter-square" onclick="nonfonctionnel()"></i>
+            <i class="fa-brands fa-linkedin" onclick="nonfonctionnel()"></i>
+        </div>
+
+    </footer>
+
+    <script src=" script.js"></script>
+</body>
+
+</html>

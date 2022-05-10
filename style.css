@@ -1,0 +1,465 @@
+/* GLOBAL*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #CECECE;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color: #992B3B;
+}
+
+header nav a {
+    align-self: center;
+    padding: 25px;
+    color: #FFF;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: bold;
+    width: 175px;
+    text-align: center;
+}
+
+header nav a:hover {
+    color: #175390;
+}
+
+nav img {
+    height: 120px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+.qui {
+    justify-content: center;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.qui h1 {
+    color: #175390;
+    font-size: 4rem;
+    width: 600px;
+    margin-left: 35%;
+    text-align: center;
+    border: solid 3px;
+    background-color: #70726E;
+}
+
+.qui p {
+    line-height: 40px;
+    font-size: 2rem;
+}
+
+.titre_objectif {
+    margin-left: 43%;
+    margin-top: 15px;
+    border: solid 2px;
+    margin-bottom: 15px;
+    width: 180px;
+    background: #70726E;
+}
+
+.ligne1 {
+    display: flex;
+    margin-left: 27%;
+    text-align: center;
+}
+
+.ligne2 {
+    display: flex;
+    margin-left: 27%;
+    text-align: center;
+}
+
+.enquete,
+.justice,
+.liberte,
+.informer {
+    background-color: #70726E;
+    border: solid 2px;
+    width: 30%;
+}
+
+.enquete,
+.informer {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.justice,
+.liberte {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.affaire {
+    text-align: center;
+}
+
+.affaire h1 {
+    color: #175390;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 4rem;
+    width: 600px;
+    margin-left: 35%;
+    border: solid 3px;
+    background-color: #70726E;
+}
+
+.affaire article {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.affaire1,
+.affaire2,
+.affaire3 {
+    width: 20%;
+    background-color: #70726E;
+}
+
+.affaire1 h2,
+.affaire2 h2,
+.affaire3 h2 {
+    font-size: 2rem;
+}
+
+.affaire1 p,
+.affaire2 p,
+.affaire3 p {
+    line-height: 40px;
+    font-size: 2rem;
+}
+
+.affaire1 img,
+.affaire2 img,
+.affaire3 img {
+    width: 95%;
+}
+
+
+/* CARROUSEL */
+
+.main_slider {
+    width: 90%;
+    margin: 2%;
+    padding-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    width: 500%;
+    height: 650px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 550px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -190px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40D3DC;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    z-index: 1;
+}
+
+.navigation-auto div {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40D3DC;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40D3DC;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40D3DC;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #40D3DC;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 7%;
+    background-color: #70726E;
+    color: #000;
+    display: flex;
+}
+
+
+
+.logo-footer{
+    height: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+footer a:hover {
+    color: #175390;
+}
+
+.reseaux {
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+}
+
+.reseaux i {
+    padding-right: 7px;
+    color: #FFF;
+}
+
+.reseaux i:hover {
+    color: #992B3B;
+    cursor: pointer;
+}
+
+@media (min-width: 100px) and (max-width: 1150px) {
+
+    header {
+        width: 100%;
+        background-color: #992B3B;
+        text-align: center;
+        position: relative;
+        padding: 0;
+    }
+
+    header nav {
+        width: 100%;
+        background-color: #992B3B;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    header nav a {
+        align-self: center;
+        color: #FFF;
+        font-size: 1em;
+        padding: 0;
+        text-decoration: none;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav img{
+        padding-left: 22%;
+    }
+
+    .qui h1 {
+        color: #175390;
+        font-size: 2rem;
+        width: 30%;
+        margin-left: 35%;
+        text-align: center;
+        border: solid 3px;
+        background-color: #70726E;
+    }
+
+    .titre_objectif {
+        margin-left: 30%;
+        margin-top: 10px;
+        border: solid 2px;
+        margin-bottom: 15px;
+        width: 25%;
+        background: #70726E;
+    }
+
+    .ligne1,
+    .ligne2 {
+        margin-left: 5%;
+    }
+
+    .enquete,
+    .justice,
+    .liberte,
+    .informer {
+        background-color: #70726E;
+        border: solid 2px;
+        width: 40%;
+    }
+
+    .enquete,
+    .informer {
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+
+    .justice,
+    .liberte {
+        margin-bottom: 1%;
+        margin-left: 1%;
+    }
+
+    .affaire {
+        text-align: center;
+    }
+
+    .affaire h1 {
+        color: #175390;
+        margin-top: 5%;
+        margin-bottom: 15px;
+        font-size: 2rem;
+        width: 30%;
+        margin-left: 35%;
+        border: solid 3px;
+        background-color: #70726E;
+    }
+
+    .affaire1,
+    .affaire2{
+        width: 27%;
+        background-color: #70726E;
+    }
+
+    .affaire1 h2,
+    .affaire2 h2{
+        font-size: 2rem;
+    }
+
+    .affaire1 p,
+    .affaire2 p{
+        line-height: 15px;
+        font-size: 1.5rem;
+    }
+
+    .affaire1 img,
+    .affaire2 img{
+        width: 95%;
+    }
+
+    .affaire3{
+        display: none;
+    }
+
+    .main_slider {
+        display: none;
+    }
+
+    .reseaux {
+        width: 100%;
+    }
+
+    .partenaire,
+    .logo-footer {
+        display: none;
+    }
+
+}
